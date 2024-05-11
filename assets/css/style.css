@@ -7,19 +7,19 @@
     display: grid;
     grid-template-areas: "aside order_by order_by"
         "aside main main"
-        "footer main main";
-    grid-template-rows: 1fr 10fr 1fr;
-    grid-template-columns: 2fr 5fr 5fr;
+        "footer pagination pagination";
+    grid-template-rows: 1fr 20fr 1fr;
+    grid-template-columns: 5fr 10fr 10fr;
     height: 100vh;
 }
 
-.order_by{
-    padding: ;
-display: flex;
-background-color: #c7aaac;
-grid-area: order_by;
-justify-content: center;
-align-items: center;
+.order_by { 
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    grid-area: order_by;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -36,25 +36,23 @@ aside {
     color: white;
     grid-area: aside;
     background-color: #99787b;
-
-aside h3{
-    color: black;
-}
-
-
-
 }
 
 main {
     grid-area: main;
-
-
+    overflow-y: auto;
 
 }
 
 footer {
     grid-area: footer;
-    background-color: #8b3038;
+    background-color:#99787b;
+    margin: 0;
+
+.footer_h6{
+    justify-content: center;
+    color: white;
+}
 
 }
 
@@ -65,13 +63,12 @@ footer {
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    padding: 5em;
     justify-content: space-around;
 
 }
 
 .grid_main {
-    padding: 1em;
+    padding-top: 40px;
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 5px;
@@ -95,11 +92,24 @@ li {
     padding: 1em;
 
 }
-.productos_card img{
+
+.productos_card img {
 
     border: 1px;
     padding: 10px;
 }
-.precio{
+
+.precio {
     padding: 2em;
+}
+
+.pagination {
+    color: #99787b;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: pagination;
 }
