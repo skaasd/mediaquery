@@ -108,14 +108,12 @@ li {
     grid-area: pagination;
 }
 
-.menu_burger {
+.menu_burger{
     display: none;
 }
-
 @media (max-width:575px) {
     body {
         margin: 0;
-
         .grid_container {
             display: block;
 
@@ -124,20 +122,19 @@ li {
         .grid_main {
             overflow: auto;
             display: block;
-            grid-template-columns: 1fr;
+            grid-template-columns:1fr;
         }
-
-        .menu_burger {
+        .menu_burger{
             display: block;
         }
+        .navbarul{
+            display: none;
+        }
+        .grid_categoria {
 
-        display: none;
-    }
-
-    .grid_categoria {
-
-        display: flex;
-        padding: 0;
-
+            display: flex;
+            padding: 0;
+        
+        }
     }
 }
